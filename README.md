@@ -3,7 +3,7 @@ This project is official implementation of 'Efficient Non-Local Contrastive Atte
 
 The code is based on EDSR.
 
-training model is available at 
+The training models are available at: 
 https://drive.google.com/drive/folders/1jYdMA0ocnb-DAr71YhOduuCySOxhoAeX?usp=sharing
 
 train ENLCA:
