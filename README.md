@@ -20,6 +20,7 @@ This project is the official implementation of 'Efficient Non-Local Contrastive 
 ## Introduction
 Non-Local Attention (NLA) brings significant improvement for Single Image Super-Resolution (SISR) by leveraging intrinsic feature correlation in natural images. However, NLA gives noisy information large weights and consumes quadratic computation resources with respect to the input size, limiting its performance and application. In this paper, we propose a novel Efficient Non-Local Contrastive Attention (ENLCA) to perform long-range visual modeling and leverage more relevant non-local features. Specifically, ENLCA consists of two parts, Efficient Non-Local Attention (ENLA) and Sparse Aggregation. ENLA adopts the kernel method to approximate exponential function and obtains linear computation complexity. For Sparse Aggregation, we multiply inputs by an amplification factor to focus on informative features, yet the variance of approximation increases exponentially. Therefore, contrastive learning is applied to further separate relevant and irrelevant features. To demonstrate the effectiveness of ENLCA, we build an architecture called Efficient Non-Local Contrastive Network (ENLCN) by adding a few of our modules in a simple backbone. Extensive experimental results show that ENLCN reaches superior performance over state-of-the-art approaches on both quantitative and qualitative evaluations.
 
+![](figs/process.jpg)
 
 
 ## Train
@@ -57,7 +58,7 @@ CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --
 ## Results
 ### Quantitative Results
 PSNR/SSIM comparison on popular SR benchmark datasets is shown below (best in red, second best in blue).
-![](figs/psnr_ssim.png)
+![](figs/quan.jpg)
 
 ### Visual Results
 Visual comparison (x4)  is shown below.
