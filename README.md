@@ -1,7 +1,7 @@
 # ENLCA
 
 This project is the official implementation of 'Efficient Non-Local Contrastive Attention for Image Super-Resolution', AAAI22
-> **Efficient Non-Local Contrastive Attention for Image Super-Resolution [[Paper](https://arxiv.org/pdf/2201.03794.pdf)] ** 
+> **Efficient Non-Local Contrastive Attention for Image Super-Resolution [[Paper](https://arxiv.org/pdf/2201.03794.pdf)]**\ 
 
 ## Contents
 - [ENLCA](#enlca)
