@@ -46,12 +46,14 @@ CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --
 
 Pre-trained models can be downloaded from [google drive](https://drive.google.com/drive/folders/1jYdMA0ocnb-DAr71YhOduuCySOxhoAeX?usp=sharing). 
 
+```shell
+# x4 SR
+CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --n_GPUs 1 --rgb_range 1  --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model ENLCN --scale 4 --save ENLCN_x4 --data_test Set5+Set14+B100+Urban100 --pre_train ENLCAx4.pt --test_only
 
-train ENLCA:
+# x2 SR
+CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --n_GPUs 1 --rgb_range 1  --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model ENLCN --scale 2 --save ENLCN_x2 --data_test Set5+Set14+B100+Urban100 --pre_train ENLCAx2.pt --test_only
+```
 
-   ```
-   sh demo.sh
-   ```
 ## Results
 ### Quantitative Results
 PSNR/SSIM comparison on popular SR benchmark datasets is shown below (best in red, second best in blue).
