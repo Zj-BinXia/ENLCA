@@ -34,7 +34,7 @@ Our code is based on EDSR. For more informaiton, please refer to [EDSR(PyTorch)]
 ### Run
 ```shell
 # x4 SR
-CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --n_GPUs 1 --rgb_range 1  --save_models --lr 1e-4 --decay 200-400-600-800 --epochs 1000 --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model ENLCN --scale 4 --patch_size 96 --save ENLCN_x4 --data_train DIV2K --data_test Set14
+CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --n_GPUs 1 --rgb_range 1  --save_models --lr 1e-4 --decay 200-400-600-800 --epochs 1000 --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model ENLCN --scale 4 --patch_size 192 --save ENLCN_x4 --data_train DIV2K --data_test Set14
 
 # x2 SR
 CUDA_VISIBLE_DEVICES=6 python main.py --dir_data /media/data2/xiabin/datasets --n_GPUs 1 --rgb_range 1  --save_models --lr 1e-4 --decay 200-400-600-800 --epochs 1000 --chop --save_results --n_resblocks 32 --n_feats 256 --res_scale 0.1 --batch_size 16 --model ENLCN --scale 2 --patch_size 96 --save ENLCN_x2 --data_train DIV2K --data_test Set14
