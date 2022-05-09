@@ -33,8 +33,8 @@ class ENLCA(nn.Module):
                                  x_embed_2.view(N, C, H * W))  # [N,H*W,H*W]
             score = torch.exp(score)
             score = torch.sort(score, dim=2, descending=True)[0]
-            positive = torch.mean(score[:, :, :5], dim=2)
-            negative = torch.mean(score[:, :, 50:], dim=2)  # [N,H*W]
+            positive = torch.mean(score[:, :, :15], dim=2)
+            negative = torch.mean(score[:, :, 50:65], dim=2)  # [N,H*W]
             loss = F.relu(-1 * torch.log(positive / (negative + 1e-6))+1)
             loss = torch.mean(loss)
 
