@@ -1,6 +1,6 @@
-# ENLCA
+# Efficient Non-Local Contrastive Attention for Image Super-Resolution (AAAI2022)
 
-This project is the official implementation of 'Efficient Non-Local Contrastive Attention for Image Super-Resolution', AAAI22
+
 > **Efficient Non-Local Contrastive Attention for Image Super-Resolution [[Paper](https://arxiv.org/pdf/2201.03794.pdf)] [[Project](https://github.com/Zj-BinXia/ENLCA)]**
 
 ![Python 3.8](https://img.shields.io/badge/python-3.8-green.svg?style=plastic)
